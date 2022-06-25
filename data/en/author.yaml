@@ -1,0 +1,15 @@
+# some information about you
+name: "Ting-En Liao"
+nickname: "Brian"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hello there, I'm"
+image: "images/author/morty.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "teliao@gmail.com"
+
+# some summary about what you do
+summary:
+  - I studied at NYCU
+  - Majored in Computer Science
+  - I love Rock music

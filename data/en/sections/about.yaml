@@ -15,7 +15,7 @@ company:
   url: "https://en.nycu.edu.tw/"
 
 # your resume. this file path should be relative to you "static" directory
-#resume: "files/resume.pdf"
+resume: "files/CV.pdf"
 
 # a summary about you
 summary: ''
@@ -23,9 +23,25 @@ summary: ''
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "teliao@gmail.com"
+
 - name: Github
   icon: "fab fa-github"
   url: "https://github.com/xxoooxx345678"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "www.linkedin.com/in/teliao"
+
+- name: Spotify
+  icon: "fab fa-spotify"
+  url: "https://open.spotify.com/user/xxoooxx345678?si=197b8b9368bc45af"
+
+- name: Steam
+  icon: "fab fa-steam"
+  url: "https://steamcommunity.com/id/xxoooxx345678/"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.

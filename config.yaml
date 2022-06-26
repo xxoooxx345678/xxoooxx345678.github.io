@@ -41,5 +41,11 @@ params:
     enable: true
     provider: darkreader
     default: system
+  
+  features:
+    analytics:
+      enabled: true
+      goatCounter:
+        code: xxoooxx345678
 
  # background: "images/<your background image name(with file extension)>"

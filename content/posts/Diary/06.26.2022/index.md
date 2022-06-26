@@ -1,5 +1,7 @@
 ---
 title: 06.26.2022
+description: None
+date: 2022-06-26
 menu:
     sidebar:
         name: 06.26.2022
@@ -22,3 +24,5 @@ menu:
 ## TODO
   - 下周三前要寫論文的abstract
   - 實習的醜狗code要通靈一下 :cold_sweat:
+  - 交大的修課心得
+  - website 的 personal information

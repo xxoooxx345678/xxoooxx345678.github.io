@@ -48,4 +48,4 @@ params:
       goatCounter:
         code: xxoooxx345678
 
- # background: "images/<your background image name(with file extension)>"
+  background: "images/background.jpg"

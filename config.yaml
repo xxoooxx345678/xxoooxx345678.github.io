@@ -13,10 +13,19 @@ languages:
 
 # Control TOC depth
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# client-search required
+outputs:
+  home:
+    - HTML
+    - json
 
 # Enable global emoji support
 enableEmoji: true

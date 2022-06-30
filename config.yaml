@@ -49,7 +49,7 @@ params:
   darkMode:
     enable: true
     provider: darkreader
-    default: system
+    default: dark
   
   features:
     analytics:

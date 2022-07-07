@@ -25,6 +25,7 @@ markup:
 outputs:
   home:
     - HTML
+    - RSS
     - json
 
 # Enable global emoji support

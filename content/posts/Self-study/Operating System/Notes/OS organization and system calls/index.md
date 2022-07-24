@@ -51,6 +51,9 @@ A key design question is what part of the operating system should run in supervi
   - Downsides:
     - interfaces between different parts of the operating system are often complex
     - easy to make mistake, and mistake is fatal in supervisor mode
+
+{{< img src="images/microkernel.PNG" height="340" width="600" float="right" title="microkernel" >}}
+
 - `Microkernel`
   - Implementation:
     - minimize the amount of operating system code that runs in supervisor mode
@@ -62,3 +65,19 @@ A key design question is what part of the operating system should run in supervi
     - expansion of the system is easier
   - Downsides:
     - IPC takes time
+
+### 2.5 Process overview
+
+The unit of isolation in xv6 is a *process*, a process provides a program with *address* space, which other processes cannot read or write.
+A process also provides the program with what appears to be its own CPU to execute the program's instructions. 
+
+
+Xv6 uses page tables to give each process its own address space. The RISC-V page table translates a *virtual address* to a *physical address*. <br>
+Xv6 reserves a page for a *trampoline* and a page mapping the process's *trapframe*, it uses this two pages to transition into the kernel and back; trampoline page contain the code to transition in and out of the kernel and trapframe is necessary to save/restore the state of the user process.
+
+{{< img src="images/address_space.PNG" height="500" width="500" align="center" title="address space" >}}
+
+{{< vs 3 >}}
+
+Each process has a *thread* of execution that executes the process's isntructions. To switch transparently between processes, the kernel suspends the currently running thread and resumes another process's thread.
+Each process has two stacks; a user stacks and a kernel stack, user stack is used when executing user instructions. When the process enter the kernel (system call or interrupt), the kernel code executes on the process's kernel stack.
